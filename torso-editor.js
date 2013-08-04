@@ -17,7 +17,6 @@ window.TorsoEditor = (function($, R) {
 
     init.prototype = {
         redraw: function() {
-            console.log(1);
             var sLeft = (this.container.width() - this.shoulderWidth) / 2;
             var sRight = sLeft + this.shoulderWidth*1;
             var wLeft = (this.container.width() - this.waistWidth) / 2;
