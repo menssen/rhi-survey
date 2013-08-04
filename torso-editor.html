@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=451, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="no">
+
+    <title>RHI Survey - Torso Editor</title>
+
+    <link rel="stylesheet" type="text/css" href="torso-editor.css" charset="utf-8">
+
+</head>
+<body>
+
+    <form action="javascript:void(0)" method="post" id="torso-form">
+        <div class='torso-shoulders'>
+            <input type="range" min="50" max="250" value="150" id="torso-shoulders" name="shoulders">
+        </div>
+        <div class='torso-waist'>
+            <input type="range" min="50" max="250" value="150" id="torso-waist" name="waist">
+        </div>
+        <div class='torso-hips'>
+            <input type="range" min="50" max="250" value="150" id="torso-hips" name="hips">
+        </div>
+    </form>
+
+    <div id="torso-container"></div>
+
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!-- jquery tools for slider -->
+    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+    <!-- raphael -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="torso-editor.js"></script>
+</body>
